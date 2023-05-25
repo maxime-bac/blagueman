@@ -119,6 +119,10 @@
       {
         "blague": "Quel tigre ne sait pas nager ?",
         "reponse":"Le tigregory"
+      },
+      {
+        "blague": "Qu'est-ce qui sépare l'homme de l'animal ?",
+        "reponse":"La méditéranée"
       }
     ]
   }
