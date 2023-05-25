@@ -21,6 +21,8 @@ fetch('blagues.json')
 function afficherBlague() {
     blagueTexte.textContent = blagues[indexBlague].blague;
     blaguesReponses.textContent = blagues[indexBlague].reponse;
+    // Générer un index aléatoire entre 0 et la longueur des blagues - 1
+    indexBlague = Math.floor(Math.random() * blagues.length);
 }
 
 // Écouteur d'événement pour le bouton "Suivant"
