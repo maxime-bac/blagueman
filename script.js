@@ -23,6 +23,8 @@ function afficherBlague() {
     blaguesReponses.textContent = blagues[indexBlague].reponse;
     // Générer un index aléatoire entre 0 et la longueur des blagues - 1
     indexBlague = Math.floor(Math.random() * blagues.length);
+    blagueTexte.textContent = blagues[indexBlague].blague;
+    blaguesReponses.textContent = blagues[indexBlague].reponse;
 }
 
 // Écouteur d'événement pour le bouton "Suivant"
