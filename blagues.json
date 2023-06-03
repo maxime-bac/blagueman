@@ -130,7 +130,7 @@
       },
       {
         "blague": "Pourquoi les tirelires sont souvent des cochons ?",
-        "reponse":"Pour pas que les arabes les vols"
+        "reponse":"Pour pas que les arabes les vols (à moins d'avoir une tirelire hallal)"
       },
       {
         "blague": "Le co voiturage le plus connu d'afrique ?",
@@ -161,7 +161,7 @@
         "reponse":"Le boomerang parce que lui il revient"
       },
       {
-        "blague": "Qu'est-ce sui fait rire 9 personnes sur 10 ?",
+        "blague": "Qu'est-ce qui fait rire 9 personnes sur 10 ?",
         "reponse":"Un viol collectif"
       },
       {
@@ -295,7 +295,36 @@
       {
         "blague": "Qu'est-ce qu'un juif qui fait du parachute ?",
         "reponse":"Une étoile filante"
-      }
+      },
+      {
+        "blague": "Qu'est-ce qui est mieux que gagner une médaille d'or aux Jeux Paralympiques ?",
+        "reponse":"Marcher"
+      },
+      {
+        "blague": "Comment est-ce qu'on appelle un boomerang qui ne revient pas ?",
+        "reponse":"Un chat"
+      },
+      {
+        "blague": "Comment sortir un bébé d'un mixer ?",
+        "reponse":"À la paille"
+      },
+      {
+        "blague": "Qu'est-ce qui a deux pattes et qui saigne ?",
+        "reponse":"Un demi-chien"
+      },
+      {
+        "blague": "Peut-on prendre un bain quand on a la diarrhée ?",
+        "reponse":"Oui, si vous en avez assez"
+      },
+      {
+        "blague": "Comment un parachutiste aveugle sait-il qu'il va toucher le sol ?",
+        "reponse":"Il y a du mou dans la laisse du chien"
+      },
+      {
+        "blague": "Qu'est-ce qu'un juif qui fait du parachute ?",
+        "reponse":"Une étoile filante"
+      },
+
     ]
 }
   
