@@ -43,7 +43,7 @@ suivantBtn.addEventListener('click', () => {
         resize: true,
         useWorker: true
       });
-      myConfetti({
+    myConfetti({
         particleCount: 160,
         spread: 160
       });
@@ -56,29 +56,70 @@ setTimeout(function() {
 
 
 
-//   btn.addEventListener('click', onButtonClick);
+// expression 
 
-//   // Sélection de l'élément .block-container .reponse
-// var reponseBlock = document.querySelector('.block-container reponse');
 
-// // Ajout d'un événement pour détecter le survol de la souris
-// reponseBlock.addEventListener('mouseover', function() {
-//   // Sélection de tous les éléments p à l'intérieur de l'élément .reponse
-//   var paragraphs = reponseBlock.getElementsByTagName('p');
 
-//   // Modification de la couleur du texte des éléments p en noir
-//   for (var i = 0; i < paragraphs.length; i++) {
-//     paragraphs[i].style.color = 'black';
-//   }
-// });
+// Récupération des éléments HTML
+const expressionTexte = document.getElementById('expression-text');
+const BTNsuivant = document.getElementById('suivant-btn1');
+const confettis = document.querySelector('#confetti-canvas1');
 
-// // Ajout d'un événement pour détecter la sortie de la souris
-// reponseBlock.addEventListener('mouseout', function() {
-//   // Sélection de tous les éléments p à l'intérieur de l'élément .reponse
-//   var paragraphs = reponseBlock.getElementsByTagName('p');
+// Initialisation des variables
+let indexExp = 0;
+let exp = [];
 
-//   // Rétablissement de la couleur du texte des éléments p à leur valeur par défaut
-//   for (var i = 0; i < paragraphs.length; i++) {
-//     paragraphs[i].style.color = 'white';
-//   }
-// });
+// Récupération des données d'expression depuis le fichier JSON
+// fetch('expressions.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         expression = data.expression;
+//         afficherexpression();
+//     })
+//     .catch(error => console.error(error));
+
+fetch('expressions.json')
+  .then(data => {
+    const expression = data.expression; // Récupérer la propriété "blague"
+    afficherexpression(exp); // Appeler la fonction d'affichage de la blague avec la blague récupérée
+  })
+  .catch(error => console.error(error));
+
+
+// Fonction pour afficher l'expression
+function afficherexpression() {
+    expressionTexte.textContent = exp[indexExp].expression;
+    // Générer un index aléatoire entre 0 et la longueur des expressions - 1
+    indexExp = Math.floor(Math.random() * exp.length);
+    expressionTexte.textContent = exp[indexExp].expression;
+}
+
+// Écouteur d'événement pour le bouton "Suivant"
+BTNsuivant.addEventListener('click', () => {
+    // Incrémenter l'index d'expression
+    indexExp++;
+
+    // Si on arrive à la fin des expressions, revenir au début
+    if (indexExp >= exp.length) {
+        indexExp = 0;
+    }
+
+    // Afficher l'expression suivante
+    afficherexpression();
+    var myConfetti1 = confetti.create(canvas, {
+        resize: true,
+        useWorker: true
+      });
+    myConfetti1({
+        particleCount: 160,
+        spread: 160
+      });
+    //   Reponses.style.animation = "200ms linear ReponseQnnim";
+});
+
+// setTimeout(function() {
+//     document.getElementById("blague-reponse").classList.remove("joke-reponse");
+//   }, 3000);
+
+
+

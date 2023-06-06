@@ -7,10 +7,13 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <p>BETA de la BETA <br> boutades aléatoire (même la première)
+    <p>BETA de la BETA <br> boutades aléatoire (même la première) <br> Les expressions arrivent
     </p>
+
+<!-- BLAGUES -->
+
     <div class="blague-container">
-        <h2>Blague du jour</h2>
+        <h2>Blague</h2>
         <p id="blague-text"></p>
        
     </div>
@@ -18,7 +21,17 @@
         <p id="blague-reponse" class="joke-reponse">réponse</p>
     </div>
     <canvas id="confetti-canvas"></canvas>
-    <button id="suivant-btn">Suivant</button>
+    <button id="suivant-btn" class="btn">Suivant</button>
+
+<!-- EXPRESSION -->
+
+    <div class="expression-container">
+        <h2>Expression</h2>
+        <p id="expression-text"></p> 
+    </div>
+
+    <canvas id="confetti-canvas1"></canvas>
+    <button id="suivant-btn1" class="btn1">Next</button>
 
     <script src="script.js"></script>
 </body>
