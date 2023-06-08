@@ -54,8 +54,8 @@ p {
     height: 100vh; 
     pointer-events: none;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 1%;
+    left: 50%;
     transform: translate(-50%);
   }
 
